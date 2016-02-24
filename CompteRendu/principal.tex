@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt,openany,oneside]{book}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{indentfirst}
+%\usepackage[T1]{fontenc}
+\usepackage[final]{pdfpages}
+\usepackage{lmodern}
+\usepackage{epigraph}
+\usepackage{hyperref}
+
+\usepackage{lipsum}
+\usepackage[usestackEOL]{stackengine}
+
+%mudando o djabo do capitulo
+%usando exemplo: https://pt.sharelatex.com/learn/Sections_and_chapters
+\usepackage{titlesec}
+ 
+\titleformat
+{\chapter} % command
+[display] % shape
+{\bfseries\Large\itshape} % format
+{Chapitre \ \thechapter} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{1pt}
+    \vspace{1ex}
+    \centering
+} 
+
+
+\setcounter{secnumdepth}{3}
+% Pacotes ....................................................................................
+\input{configs/pacotes.tex}
+
+% Novos Comandos .....................................................................
+\input{configs/comandos.tex}
+%\citationmode{abbr}
+
+% Inicia o texto
+\begin{document}
+
+% Paginas iniciais (sem numera��o)
+\pagestyle{empty}
+
+% P�gina de rosto (capa interna)
+\include{rosto}  
+
+%Espa�amento 1 1/2
+\onehalfspacing  
+
+\clearpage
+
+% Paginas introdut�rias (com numera��o romana)
+\frontmatter
+
+%sResumo
+\include{01_Introducao/resumo} 
+
+% Lista de conte�do (sum�rio, gerado automaticamente)
+%\addcontentsline{toc}{chapter}{Sumario}
+%\renewcommand{\contentsname}{Sumário}
+%\tableofcontents  
+\begingroup
+\let\cleardoublepage\clearpage
+\renewcommand{\contentsname}{Plan}
+\tableofcontents
+\endgroup
+
+
+% Lista de figuras (gerada automaticamente)
+%\cleardoublepage 
+%\addcontentsline{toc}{chapter}{Liste des Images}  
+%\listoffigures  
+
+
+% P�ginas do texto principal (com cabe�alho)
+\mainmatter
+\pagestyle{headings}
+
+% Para facilitar a organiza��o, foi criado um diret�rio para cada
+% cap�tulo do documento, pois assim os arquivos das figuras ficam
+% classificados por cap�tulos
+% Introdu��o
+\input{01_Introducao/introducao.tex} 
+
+% Desenvolvimento
+%\include{02_Desenvolvimento/desenvolvimento.tex} 
+\input{02_Desenvolvimento/desenvolvimento.tex} 
+
+% Conclus�es
+%\include{03_Conclusao/conclusao.tex} 
+%\input{03_Conclusao/conclusao.tex} 
+
+\backmatter
+
+%\chapter{Anexos}
+
+
+% Refer�ncias bibliog�ficas (geradas automaticamente)
+%\bibliographystyle{ppgee}
+
+%\bibliographystyle{dcu}
+%\addcontentsline{toc}{chapter}{Referências bibliográficas}
+
+%Arquivo com as bibliografias
+%\bibliography{bibliografia}
+
+
+\end{document}

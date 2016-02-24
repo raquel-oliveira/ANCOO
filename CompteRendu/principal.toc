@@ -1,0 +1,16 @@
+\select@language {portuguese}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}TD1}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}D\IeC {\'e}scription physique}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}R\IeC {\'e}\IeC {\'e}criture de l'expression des besoins recentr\IeC {\'e}e sur les utilisateurs du systeme}{3}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Les acteurs}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Fonctionnalit\IeC {\'e}s}{3}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}\textbf {Cas d\IeC {\textquoteright }utilisation:} Passer le p\IeC {\'e}age }{3}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.2}\textbf {Cas d\IeC {\textquoteright }utilisation:} Gerer la comptabilit\IeC {\'e}}{4}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}\textbf {Cas d\IeC {\textquoteright }utilisation:} Maintenance}{4}{subsubsection.2.2.2.3}
+\contentsline {chapter}{\numberline {3}TD2}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Diagramme UC de haut niveau}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Scen\IeC {\'a}rios Cockburn - Passer le p\IeC {\'e}age}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Scen\IeC {\'a}rios Secundaries}{6}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Scen\IeC {\'a}rios Cockburn - Paie le passage}{6}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Scen\IeC {\'a}rios Cockburn}{7}{subsection.3.3.2}

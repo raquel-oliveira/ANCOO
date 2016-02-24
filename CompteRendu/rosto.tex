@@ -1,0 +1,67 @@
+%
+% ********** Pagina de Rosto
+%
+
+% titlepage gera paginas sem numeracao
+\begin{titlepage}
+
+\begin{center}
+
+\small
+
+% O comando @{} no ambiente tabular x é  para criar um novo delimitador
+% entre colunas que não a barra vertical | que é normalmente utilizada.
+% O delimitador desejado vai entre as chaves. No exemplo, não há nada,
+% de modo que o delimitador é vazio. Este recurso está sendo usado para
+% eliminar o espaço que geralmente existe entre as colunas
+\begin{tabularx}{\linewidth}{ c X }
+% A figura foi colocada dentro de um parbox para que fique verticalmente
+% centralizada em relação ao resto da linha
+\parbox[c]{7cm}{\includegraphics[width=\linewidth]{polytech_logo}} &
+\begin{center}
+\textsf{\textsc{Polytech Nice Sophia\\ Analyse Conception Object
+}} 
+\end{center}
+
+\end{tabularx}
+
+
+% O vfill � um espa�o vertical que assume a m�xima dimens�o poss�vel
+% Os vfill's desta p�gina foram utilizados para que o texto ocupe
+% toda a folha
+\vfill
+
+\LARGE
+
+\textbf{TD 2}
+
+\vfill
+
+\Large
+
+\textbf{\href{mailto:gabicavalcantesilva@gmail.com}{CAVALCANTE DA SILVA Gabriela},\\
+\href{mailto:cesar.colle@gmail.com }{COLLE César},\\\href{mailto:oliveira.raquel.lopes@gmail.com}LOPES DE OLIVEIRA,\\ \href{mailto:arnold.schweitzer@gmail.com}{SCHWEITZER Arnold}}
+
+\vfill
+
+\normalsize
+
+Enseignant: Colette Michel
+
+\vfill
+
+\hfill
+\parbox{0.5\linewidth}{\textbf{
+A faire:} Diagranne UC (he haute niveau); Diagramme UC détailllés et Scéncarios Cockburn correspondant.}
+
+
+\vfill
+
+\large
+
+%Data
+Valbonne, FR, février 25
+
+\end{center}
+
+\end{titlepage}
