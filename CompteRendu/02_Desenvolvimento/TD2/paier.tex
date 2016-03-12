@@ -1,30 +1,42 @@
-\textbf{Cas d'utilisation:} Paie le passage
+\subsection{Scénario Cockburn}
+\textbf{Cas d'utilisation:} Payer le passage
 
-\textbf{Acteur primaire:} Conducteur
+\textbf{Acteur primaire:} Le conducteur
 
-\textbf{Acteur support:} Le poste de surveillance et opérateur humain(si le borne est manuelle)
+\textbf{Acteur support:} Le poste de surveillance et opérateur humain (si le borne est manuelle)
 
 \textbf{Pré-condition: }  la borne est opérationnelle
-%La borne affiche le montant 
-%La boucle au sol détermine la présence du véhicule
- 
-%\textbf{Post-condition: } 
 
-\textbf{Scenario primaire: } \\
-    \textbf{1.} La borne attende le conducteur choisir un moyen de payment accepté pour le borne\\
-    %La borne affiche le montant \\ %Le conducteur insère le moyen de paiement. cesaaaar
-    \textbf{2.} Le conduteur paier avec carte bleu (\ref{subsec:paierBleu})\\
-    \textbf{3.} Paiement etait accepté. Le feu change de couleur\\
+\textbf{Scenario primaire: } \\ 
+    \textbf{1.} Le conducteur paye par carte bleu %(\ref{subsec:paierBleu})
+    \\ 
 
 \textbf{Variantes:}\\
-    \textbf{2a.} Le conduteur paier par liquide (\ref{subsec:paieLiquide})\\
-    \textbf{2b.} Le conduteur paier avec cart abonnement (\ref{subsec:paierAbonement})\\
-    \textbf{2c.} Le conduteur ne peut pas payer \\ %he clicks in the botton who calls the technicien 
+    \textbf{1a.} Le conduteur paye en liquide %(\ref{subsec:paieLiquide})
+    \\
+    \textbf{1b.} Le conducteur paye par carte abonnement %(\ref{subsec:paierAbonement})
+    \\
+     \textbf{1c.} Le conducteur paye par telépéage.
+     \\
+    \textbf{1d.} Le paiement a échoué. Retourne à l’état 1. \\ %he clicks in the botton who calls the technicien 
 
-%IMAGES
-\textbf{Décomposition des cas d'utilisation:} 
+\subsection{Décomposition de cas d'utilisation (Généralisation):} 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.7]{02_Desenvolvimento/TD2/images/paierInclusion.png}
-    \caption{Décomposition des cas d'utilisation: Paie le passage}
+    \includegraphics[scale=0.5]{02_Desenvolvimento/TD2/images/PayeGeneralisation.png}
+    \caption{Généralisation de cas d'utilisation: Payer le passage}
+\end{figure}
+
+\subsection{Diagramme d'activité}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/DAPayePassage.png}
+    \caption{Diagramme d'activité: Payer le passage}
+\end{figure}
+\newpage
+\subsection{Collaboration}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/ColaPayer.png}
+    \caption{Diagramme d'activité: Payer le passage}
 \end{figure}
