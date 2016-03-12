@@ -1,10 +1,9 @@
-\textbf{Cas d'utilisation: Payer avec une carte d'abonnement}
+\subsection{Scénario Cockburn}
+\textbf{Cas d'utilisation:} Payer par carte abonnement
 
 \textbf{Acteur primaire:} Le conducteur
 
-%\textbf{Acteur support:}
-
-\textbf{Pré-condition: }  la borne affiche le montant
+\textbf{Pré-condition: }  La borne affiche le montant
 
  
 %\textbf{Post-condition: } 
@@ -15,7 +14,7 @@
     \textbf{3.} Le conducteur récupère sa carte.\\
 
 \textbf{Variantes:}\\
-    \textbf{1a.}Le conducteur insère une carte invalide, un technicien est appelé.\\
+    \textbf{1a.}  Le conducteur insère une carte invalide. La borne redonne la carte invalide au conducteur. retour en 1.\\
     
 %\textbf{Décomposition des cas d'utilisation:} 
 %\begin{figure}[h]
@@ -23,3 +22,17 @@
   %  \includegraphics[scale=0.7]{02_Desenvolvimento/TD2/images/PaiementCarteAbonnement.png}
    % \caption{Décomposition des cas d'utilisation: Payer avec une carte d'abonnement}
 %\end{figure}
+\newpage
+\subsection{Diagramme d'activité}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/DAAbonnement.png}
+    \caption{Diagramme d'activité: Payer par carte abonnement}
+\end{figure}
+\newpage
+\subsection{Collaboration}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/ColaAbonnement.png}
+    \caption{Collaboration: Payer par carte abonnement}
+\end{figure}
