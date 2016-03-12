@@ -1,8 +1,7 @@
+\subsection{Scénario Cockburn}
 \textbf{Cas d'utilisation: }Rentrer
 
 \textbf{Acteur primaire:} Le conducteur
-
-%\textbf{Acteur support:}
 
 \textbf{Pré-condition: } La voie est libre et ouvertre.
  
@@ -10,21 +9,29 @@
 
 
 \textbf{Scenario primaire: } \\
-    \textbf{1.} Le premiere boucle repère le véhicule.\\
+    \textbf{1.} La boucle repère le véhicule.\\
     \textbf{2.} La boucle envoi l’information à la borne.\\
-    \textbf{3.} La borne afficher le montant.
+    \textbf{3.} La borne détermine le type de véhicule. Le type est autorisé \\
+    \textbf{4.} La borne afficher le montant.
 
 \textbf{Variantes:}\\
-%	1.a ) La voie est fermé, le conducteur appelle le technicien.
-    \textbf{1a.} la boucle ne repère pas le véhicule, l’utilisateur ne peut pas passer. Il doit appeller le technicien\\
-    \textbf{1b.} Le operateur de la borne (manuelle) repère un véhicule prioritaire en urgence, elle ouvre manuellement la barrière\\
-    \textbf{2a.}  la connexion est impossible, il appelle le technicien. \\
-    
-    % O primeiro bou
-
-%\textbf{Décomposition des cas d'utilisation:} 
-%\begin{figure}[h]
-%    \centering
-    %\includegraphics[scale=0.7]{02_Desenvolvimento/TD2/images/}
-%    \caption{Décomposition des cas d'utilisation: Rentrer}
-%\end{figure}
+    \textbf{1a.} La boucle ne repère pas le véhicule, l’utilisateur ne peut pas passer. Il doit appeler le technicien. Fin scénario.\\
+    \textbf{3a.} L’opérateur repère un véhicule prioritaire en urgence. Il ouvre la barrière manuellement. Fin scénario \\
+    \textbf{3b.} La borne détermine le type de véhicule. Le type n’est pas autorisé. Il appelle le technicien.\\
+    \textbf{4a.} La borne n’affiche pas le montant, l’utilisateur ne peut pas payer il appelle le technicien.\\
+\newpage    
+\subsection{Diagramme d'activité}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.45, angle = 90]{02_Desenvolvimento/TD2/images/DARentrer.png}
+    \caption{Diagramme d'activité - Rentrer}
+    \label{fig:DARentrer}
+\end{figure}
+\newpage    
+\subsection{Collaboration}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/ColaRentrer.png}
+    \caption{Collaboration - Rentrer}
+    \label{fig:DARentrer}
+\end{figure}
