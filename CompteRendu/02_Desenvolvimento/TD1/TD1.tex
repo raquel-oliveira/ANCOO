@@ -3,35 +3,50 @@
 
 
 \section{Description physique}
-Nous avons perçu que le système demandé sur la gestion d’une voie de péage d’autoroute.
+Nous avons decrit physiquement le système demandé sur la gestion d’une voie de péage d’autoroute.
 %Nous avons élaborré dans ce document une première description de système d’un péage d’autoroute.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.16]{02_Desenvolvimento/TD1/images/desc.png}
+    \includegraphics[scale=0.1]{02_Desenvolvimento/TD1/images/desc.png}
     \caption{Description physique}
     \label{fig:my_label}
 \end{figure}
+\textbf{Légende}
+\begin{enumerate}
+    \item Exemple d'une borne automatique
+    \item Exemple d'une borne manuelle, où l'usager paye à un opérateur humain.
+    \item Poste de surveillance, où les surveillants sont.
+\end{enumerate}
+    \textbf{Observation sur les borne}: Il y a autres différents types de borne, au total sont: 
+    \begin{itemize}
+        \item Borne Manuelle, où l'usager paye via un opérateur humain.
+        \item Borne automatique où l'usager paye soit en pièces dans un appareil capable de rendre la monnaie si nécessaire, soit avec une carte d'abonnement soit avec une carte de crédit.
+        \item Borne de télepeage qui détecte automatiquement la présence d'une carte affiché sur le véhicule et déclenche le changement de couleur du feu et le lever de barrieère.
+        \item Borne mixte autorisant le paiement automatique et le télépeage.
+    \end{itemize}
 \newpage
 \section{Réécriture de l'expression des besoins recentrée sur les utilisateurs du systeme}
 \subsection{Les acteurs} 
 Nous avons reconnu cinq acteurs (utilisateurs) du système tel que :
 \begin{itemize}
-    \item \textbf{Le Client (Conducteur de voiture)}: Le conducteur est le client, le rôle du conducteur est de passer la barrière de péage autoroutiere. 
+    \item \textbf{Le Client (Le Conducteur)}: Le conducteur est le client, le rôle du conducteur est de passer la barrière de péage autoroutiere. 
     \item \textbf{La Société d’Autoroute}: 	La société est la propriétaire de la barrière de péage et gère donc la barrière. C’est elle qui va gérer aussi les cartes d’abonnement et le traitement des comptes des abonnés. 
-    \item \textbf{Le Technicien}: Le technicien est l’acteur premier pour la maintenance du système. Le technicien lève la barrière manuellement en cas d’urgence. Il va faire des interventions humaines si necessaire, ex: si la barrière ne s’ouvre pas. 
+    \item \textbf{Le Technicien}: Le technicien est l’acteur primair pour la maintenance du système. Le technicien lève la barrière manuellement en cas d’urgence. Il va effectuer des interventions humaines si necessaire, ex: si la barrière ne s’ouvre pas. 
     \item \textbf{Operateur humain}: L’ operateur humain reçoit le paiement du client (conducteur) dans les bornes manuelles.
     \item \textbf{Le Surveillant}: Les surveillants supervisent l’ensemble des bornes pour assurer, par exemple, qu’à tout moment il y ait une voie ouverte ou que le nombre de voies ouvertes soit proportionnel au flux de véhicules. Si le système lève une alarme vers l’ordinateur du poste de surveillance, un surveillant doit faire une intervention, comme remettre de la monnaie dans une borne et fait un compte-rendu approximatif de l’incident.
 \end{itemize}
 \newpage
+
 \subsection{Les Grandes Fonctionnalités du Système}
 Nous avons différencié trois grandes fonctionnalités du système:\\
 
-\textbf{Passer le péage }(\ref{subsubsec:passerL})
+\textbf{Passer le péage }%(\ref{subsubsec:passerL})
 
-\textbf{Gerer la comptapilité } (\ref{subsubsec:gerer})
+\textbf{Gerer la comptapilité } %(\ref{subsubsec:gerer})
 
-\textbf{Maintenance }(\ref{subsubsec:maint})\\
+\textbf{Maintenance }%(\ref{subsubsec:maint})
+\\
 
 Ainsi voici les scénarios informels correspondant :
 \subsubsection{\textbf{Cas d’utilisation:} Passer le péage } \label{subsubsec:passerL} 
@@ -39,8 +54,7 @@ Ainsi voici les scénarios informels correspondant :
 
 \textbf{Acteur support}: La Société d’Autoroute, le technicien, l’operateur humain et le surveillant
 
-Le client (le conducteur) opte pour une voie selon son type de véhicule et le moyen de paiement. Le client effectue le paiement selon le type de borne qu’ il a choisi (avec une carte d’abonnement, carte de crédit, monnaie, monnaie avec un opérateur humain, etc). Le système gère l’ouverture de la barrière une fois le montant payé ou la carte d’abonnement présenté, si la barrière ne s’ouvre pas, alors un technicien ou un opérateur doit venir régler l’incident survenu.
-
+Le client (le conducteur) opte pour une voie d’autoroute selon son type de véhicule et le moyen de paiement. La borne détecte et valide le véhicule. Le conducteur effectue le paiement selon le type de borne qu’il a choisi (avec une carte d’abonnement, carte de crédit, monnaie, monnaie à un opérateur humain, etc). Le système gère l’ouverture de la barrière une fois le montant payé ou la carte d’abonnement présenté. Si la barrière ne s’ouvre pas ou si la borne détecte un véhicule non autorisé, alors un technicien ou un opérateur doit venir régler l’incident survenu. Si une borne automatique n'a plus de mannaie, donc il faut lever une alarme vers l'ordinateur du poste de surveillance. C'est le même traitement le déclenchement des mouvements de barrières, des affichages des panneaux indicatifs de l'ouverture au de la fermeture de la voie, la sychronisation feu et aval, etc.
 
 \subsubsection{\textbf{Cas d’utilisation:} Gerer la comptabilité}  \label{subsubsec:gerer}
 \textbf{Acteur primaire}: La Société d'autoroute 
