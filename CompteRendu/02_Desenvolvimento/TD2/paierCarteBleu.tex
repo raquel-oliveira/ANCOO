@@ -1,4 +1,5 @@
-\textbf{Cas d'utilisation:} Payer avec carte blue
+\subsection{Scénario Cockburn}
+\textbf{Cas d'utilisation:} Payer par carte blue
 
 \textbf{Acteur primaire:} Le conducteur
 
@@ -10,13 +11,14 @@
 %\textbf{Post-condition: } 
 
 \textbf{Scenario primaire: } \\
-    \textbf{1.}Le conducteur insère sa carte bancaire pour payer. \\ %La borne détecte si la carte est volée
+    \textbf{1.} Le conducteur insère sa carte bancaire pour payer. \\ %La borne détecte si la carte est volée
     \textbf{2.} La borne accepte le paiement \\
     \textbf{3.} Le conducteur récupère sa carte.\\
 
 \textbf{Variantes:}\\
     %\textbf{1a.} Le conducteur insère une carte volée, un technicien est appelé.
-    \textbf{2a.} Le conducteur insère une carte invalide, la borne rend la carte et un technicien est appelé\\
+    \textbf{1a.} Le conducteur insère une carte volée. La borne détecte si la carte est volée. La borne avale la carte.\\
+    \textbf{2a.} La borne n’accepte pas le paiement. Le conducteur appelle le technicien. \\
     
 %\textbf{Décomposition des cas d'utilisation:} 
 %\begin{figure}[h]
@@ -24,3 +26,17 @@
   %  \includegraphics[scale=0.7]{02_Desenvolvimento/TD2/images/CarteBleueCockburn.png}
    % \caption{Décomposition des cas d'utilisation: Payer avec carte blue}
 %\end{figure}
+\newpage
+\subsection{Diagramme d'activité}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{02_Desenvolvimento/TD2/images/DAPayeBleu.png}
+    \caption{Diagramme d'activité: Payer par carte blue}
+\end{figure}
+\newpage
+\subsection{Collaboration}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/ColaCarteBleu.png}
+    \caption{Collaboration: Payer par carte blue}
+\end{figure}
