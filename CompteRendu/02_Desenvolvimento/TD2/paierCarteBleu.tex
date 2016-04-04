@@ -1,42 +1,45 @@
-\subsection{Scénario Cockburn}
-\textbf{Cas d'utilisation:} Payer par carte bleu
+\subsubsection{Scénario Cockburn}
+\textbf{Cas d'utilisation:} Payer par carte bleue
 
 \textbf{Acteur primaire:} Le conducteur
 
-%\textbf{Acteur support:}
+\textbf{Pré-condition: } Le conducteur insère sa carte bleue dans la borne.
 
-\textbf{Pré-condition: } la borne affiche le montant
+\textbf{Post-condition: }  La transaction a été validé ou pas.
 
- 
-%\textbf{Post-condition: } 
 
-\textbf{Scenario primaire: } \\
-    \textbf{1.} Le conducteur insère sa carte bancaire pour payer. \\ %La borne détecte si la carte est volée
-    \textbf{2.} La borne accepte le paiement \\
-    \textbf{3.} Le conducteur récupère sa carte.\\
-
+\textbf{Scénario primaire: } \\
+    \textbf{1.} Le lecteur de carte analyse la  carte bleue : la carte n’est pas une carte volée.\\ 
+    \textbf{2.} La borne accepte le transaction(paiement). \\
+  
 \textbf{Variantes:}\\
-    %\textbf{1a.} Le conducteur insère une carte volée, un technicien est appelé.
-    \textbf{1a.} Le conducteur insère une carte volée. La borne détecte si la carte est volée. La borne avale la carte.\\
-    \textbf{2a.} La borne n’accepte pas le paiement. Le conducteur appelle le technicien. \\
+    \textbf{1a1.} La vérification auprès des cartes volées indique que la carte bleue est volée.\\
+    \textbf{1a2.} La transaction est échoue(payement est refusé). Fin scénario.\\
     
-%\textbf{Décomposition des cas d'utilisation:} 
-%\begin{figure}[h]
- %   \centering
-  %  \includegraphics[scale=0.7]{02_Desenvolvimento/TD2/images/CarteBleueCockburn.png}
-   % \caption{Décomposition des cas d'utilisation: Payer avec carte bleu}
-%\end{figure}
 \newpage
-\subsection{Diagramme d'activité}
+\subsubsection{Diagramme d'activité}
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.8]{02_Desenvolvimento/TD2/images/DAPayeBleu.png}
-    \caption{Diagramme d'activité: Payer par carte bleu}
+    \caption{Diagramme d'activité: Payer par carte bleue}
 \end{figure}
 \newpage
-\subsection{Collaboration}
+\subsubsection{Collaboration}
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/ColaCarteBleu.png}
-    \caption{Collaboration: Payer par carte bleu}
+    \caption{Collaboration: Payer par carte bleue}
+\end{figure}
+\newpage    
+\subsubsection{Diagramme de séquence}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.5]{02_Desenvolvimento/TD2/images/DS-payerCarteBleu.png}
+    \caption{Diagramme de séquence - Payer par carte bleue - à revisiter }
+\end{figure}
+\subsubsection{Diagramme de séquence}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.5]{02_Desenvolvimento/TD2/images/v2-DS-payerCarteBleu.png}
+    \caption{Diagramme de séquence - Payer par carte bleue}
 \end{figure}
