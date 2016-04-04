@@ -4,14 +4,12 @@
 
 \section{Description physique}
 Nous avons decrit physiquement le système demandé sur la gestion d’une voie de péage d’autoroute.
-%Nous avons élaborré dans ce document une première description de système d’un péage d’autoroute.
-
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.1]{02_Desenvolvimento/TD1/images/desc.png}
+    \includegraphics[scale=0.2]{02_Desenvolvimento/TD1/images/image.png}
     \caption{Description physique}
-    \label{fig:my_label}
 \end{figure}
+\newpage
 \textbf{Légende}
 \begin{enumerate}
     \item Exemple d'une borne automatique
@@ -49,19 +47,19 @@ Nous avons différencié trois grandes fonctionnalités du système:\\
 \\
 
 Ainsi voici les scénarios informels correspondant :
-\subsubsection{\textbf{Cas d’utilisation:} Passer le péage } \label{subsubsec:passerL} 
+\subsubsection{\textbf{Passer le péage }} \label{subsubsec:passerL} 
 \textbf{Acteur primaire}: Le Client (le conducteur) 
 
 \textbf{Acteur support}: La Société d’Autoroute, le technicien, l’operateur humain et le surveillant
 
 Le client (le conducteur) opte pour une voie d’autoroute selon son type de véhicule et le moyen de paiement. La borne détecte et valide le véhicule. Le conducteur effectue le paiement selon le type de borne qu’il a choisi (avec une carte d’abonnement, carte de crédit, monnaie, monnaie à un opérateur humain, etc). Le système gère l’ouverture de la barrière une fois le montant payé ou la carte d’abonnement présenté. Si la barrière ne s’ouvre pas ou si la borne détecte un véhicule non autorisé, alors un technicien ou un opérateur doit venir régler l’incident survenu. Si une borne automatique n'a plus de mannaie, donc il faut lever une alarme vers l'ordinateur du poste de surveillance. C'est le même traitement le déclenchement des mouvements de barrières, des affichages des panneaux indicatifs de l'ouverture au de la fermeture de la voie, la sychronisation feu et aval, etc.
 
-\subsubsection{\textbf{Cas d’utilisation:} Gerer la comptabilité}  \label{subsubsec:gerer}
+\subsubsection{\textbf{Gerer la comptabilité}} \label{subsubsec:gerer}
 \textbf{Acteur primaire}: La Société d'autoroute 
 
 Le système doit assurer la comptabilité générale de l’ensemble des bornes. Chaque levée de barrière est enregistré. Les cartes d’abonnement et les compte des abonnés sont gérés par la société d’autoroute de façon instantanée, chaque passage est enregistré. Les opérations par cartes bleues sont gérées en fin de journée. Les bornes détectent les fausses pièces et les cartes volées.
 
-\subsubsection{\textbf{Cas d’utilisation:} Maintenance}  \label{subsubsec:maint}
+\subsubsection{\textbf{ Maintenance}} \label{subsubsec:maint}
 \textbf{Acteur primaire}: Le Technicien 
 
 \textbf{Acteur support}: Le surveillant, l’opérateur humain
