@@ -1,38 +1,45 @@
-\subsection{Scénario Cockburn}
-\textbf{Cas d'utilisation:} Payer par carte abonnement
+\subsubsection{Scénario Cockburn}
+\textbf{Cas d'utilisation:} Payer par carte d'abonnement
 
 \textbf{Acteur primaire:} Le conducteur
 
-\textbf{Pré-condition: }  La borne affiche le montant
+\textbf{Pré-condition: }  La borne affiche le montant.
 
  
-%\textbf{Post-condition: } 
+\textbf{Post-condition: }  La transaction(payement) a été validé ou pas.
 
 \textbf{Scenario primaire: } \\
-    \textbf{1.} Le conducteur insère sa carte d’abonnement pour payer. \\
-    \textbf{2.} La borne enregistre le passage sur l’ordinateur centrale.\\
-    \textbf{3.} Le conducteur récupère sa carte.\\
+    \textbf{1.} Le lecteur vérifie la carte d'abonnement. La carte est valide. \\
+    \textbf{2.} La borne accepte le payement.\\
 
 \textbf{Variantes:}\\
-    \textbf{1a.}  Le conducteur insère une carte invalide. La borne redonne la carte invalide au conducteur. retour en 1.\\
+    \textbf{1a1.}   Le lecteur détecte une carte d'abonnement invalide.\\
+    \textbf{1a2.}   La transaction est échoue(payement est refusé). Fin scénario.\\
     
-%\textbf{Décomposition des cas d'utilisation:} 
-%\begin{figure}[h]
- %   \centering
-  %  \includegraphics[scale=0.7]{02_Desenvolvimento/TD2/images/PaiementCarteAbonnement.png}
-   % \caption{Décomposition des cas d'utilisation: Payer avec une carte d'abonnement}
-%\end{figure}
 \newpage
-\subsection{Diagramme d'activité}
+\subsubsection{Diagramme d'activité}
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/DAAbonnement.png}
-    \caption{Diagramme d'activité: Payer par carte abonnement}
+    \caption{Diagramme d'activité: Payer par carte d'abonnement}
 \end{figure}
 \newpage
-\subsection{Collaboration}
+\subsubsection{Collaboration}
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/ColaAbonnement.png}
-    \caption{Collaboration: Payer par carte abonnement}
+    \includegraphics[scale=0.6]{02_Desenvolvimento/TD2/images/ColaCarteAbonnement.png}
+    \caption{Collaboration: Payer par carte d'abonnement}
+\end{figure}
+\newpage    
+\subsubsection{Diagramme de séquence}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.5]{02_Desenvolvimento/TD2/images/DS-payerAbonnement.png}
+    \caption{Diagramme de séquence - Payer par carte d'abonnement - à revisiter }
+\end{figure}
+\subsubsection{Diagramme de séquence}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.5]{02_Desenvolvimento/TD2/images/v2-DS-payerCarteAbonnement.png}
+    \caption{Diagramme de séquence - Payer par carte d'abonnement}
 \end{figure}
